@@ -1,9 +1,34 @@
 <ion-header>
     <ion-toolbar>
         <ion-title>
-            About
+            About S.P.I.T.
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-12 col-md-6 col-lg-4 col-xl-3>
+                <ion-card>
+                    <ion-card-header>About Us</ion-card-header>
+                    <ion-label>
+                        <p id="expandWrapper" class="expand-wrapper" [class.collapsed]="!p.Expanded">
+                            Hello people
+                        </p>
+                    </ion-label>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>Institutional Value</ion-card-header>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>Vision and Mission</ion-card-header>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>Founder's Message</ion-card-header>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
