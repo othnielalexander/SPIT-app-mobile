@@ -7,28 +7,16 @@
 </ion-header>
 
 <ion-content>
-
-    <ion-grid>
-        <ion-row>
-            <ion-col col-12 col-md-6 col-lg-4 col-xl-3>
-                <ion-card>
-                    <ion-card-header>About Us</ion-card-header>
-                    <ion-label>
-                        <p id="expandWrapper" class="expand-wrapper" [class.collapsed]="!p.Expanded">
-                            Hello people
-                        </p>
-                    </ion-label>
-                </ion-card>
-                <ion-card>
-                    <ion-card-header>Institutional Value</ion-card-header>
-                </ion-card>
-                <ion-card>
-                    <ion-card-header>Vision and Mission</ion-card-header>
-                </ion-card>
-                <ion-card>
-                    <ion-card-header>Founder's Message</ion-card-header>
-                </ion-card>
-            </ion-col>
-        </ion-row>
-    </ion-grid>
+    <ion-list>
+        <button detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items">
+          <ion-thumbnail item-start>
+          </ion-thumbnail>
+          <h2>My Neighbor Totoro</h2>
+          <p>Hayao Miyazaki • 1988</p>
+          <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
+              Hello people
+          </expandable>
+          <button ion-button clear item-end>View</button>
+        </button>
+    </ion-list>
 </ion-content>
