@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button class="title"></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="title">Feedback</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item lines="full">
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating">Class</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating">Roll No.</ion-label>
+        <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating" class="ion-text-center">Do you want notification submission</ion-label>
+        <ion-toggle color="primary"></ion-toggle>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating"><strong>Tick mark the features you have found in the app</strong></ion-label>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating" class="ion-text-center">Aesthetically Pleasing</ion-label>
+        <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating" class="ion-text-center">Simplicity</ion-label>
+        <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating" class="ion-text-center">Transparency</ion-label>
+        <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating" class="ion-text-center">Immersion</ion-label>
+        <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-item lines="full">
+        <ion-label position="floating" class="ion-text-center">Positive First Impression</ion-label>
+        <ion-checkbox color="primary"></ion-checkbox>
+    </ion-item>
+
+    <ion-row>
+        <ion-col>
+            <ion-button color="tertiary" class="butt" expand="block" (click)="presentToast()">Submit</ion-button>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

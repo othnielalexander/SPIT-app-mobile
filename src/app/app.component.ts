@@ -17,11 +17,22 @@ export class AppComponent {
   ) {
     this.initializeApp();
   }
-
+  navigate;
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
+  }
+  sideMenu()
+  {
+    this.navigate =
+    [
+      {
+        title : "Feedback",
+        url   : "/home",
+        icon  : "home"
+      }
+    ]
   }
 }

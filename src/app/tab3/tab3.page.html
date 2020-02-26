@@ -1,9 +1,45 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button class="title"></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="title">
             Profile
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+    <ion-row>
+        <ion-col>
+            <ion-card class="ion-text-left">
+                <ion-card-header class="text">
+                    Basic Details
+                </ion-card-header>
+                <ion-card-content>
+                    <ion-item-divider>Name: Othniel</ion-item-divider>
+                    <ion-item-divider>UID: 2018450035</ion-item-divider>
+                    <ion-item-divider>Class: SYMCA</ion-item-divider>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card class="ion-text-left">
+                <ion-card-header class="text">
+                    Account Details
+                </ion-card-header>
+                <ion-card-content>
+                    Password : ************
+                    <ion-icon name="create" size="small"></ion-icon>
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-button color="tertiary" class="butt" expand="block">LOG OUT</ion-button>
+        </ion-col>
+    </ion-row>
+</ion-content>

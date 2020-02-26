@@ -1,22 +1,64 @@
 <ion-header>
     <ion-toolbar>
-        <ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button class="title"></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="title">
             About S.P.I.T.
         </ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-    <ion-list>
-        <button detail-none (click)="expandItem(item)" ion-item *ngFor="let item of items">
-          <ion-thumbnail item-start>
-          </ion-thumbnail>
-          <h2>My Neighbor Totoro</h2>
-          <p>Hayao Miyazaki • 1988</p>
-          <expandable [expandHeight]="itemExpandHeight" [expanded]="item.expanded">
-              Hello people
-          </expandable>
-          <button ion-button clear item-end>View</button>
-        </button>
-    </ion-list>
+
+    <ion-row>
+        <ion-col>
+            <ion-card class="ion-text-center">
+                <ion-card-header class="text">
+                    About Us
+                </ion-card-header>
+                <ion-card-content>
+                    The institute is located in 47 acres of green campus at Andheri (W), the fastest growing suburb of Mumbai. The campus also houses four Bhavan’s Institutions of great repute namely Bhavan’s College (the arts, commerce and science college), Sardar Patel
+                    College of Engineering – Government aided Engineering college, S.P. Jain Institute of Management and Research, a management institute and A.H. Wadia, higher secondary school.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card class="ion-text-center">
+                <ion-card-header class="text">
+                    Institutional Value
+                </ion-card-header>
+                <ion-card-content>
+                    The institute is located in 47 acres of green campus at Andheri (W), the fastest growing suburb of Mumbai. The campus also houses four Bhavan’s Institutions of great repute namely Bhavan’s College (the arts, commerce and science college), Sardar Patel
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card class="ion-text-center">
+                <ion-card-header class="text">
+                    Vision and Mission
+                </ion-card-header>
+                <ion-card-content>
+                    College of Engineering – Government aided Engineering college, S.P. Jain Institute of Management and Research, a management institute and A.H. Wadia, higher secondary school.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-card class="ion-text-center">
+                <ion-card-header class="text">
+                    Founder's Message
+                </ion-card-header>
+                <ion-card-content>
+                    These courses have earned a great reputation in the field of engineering education, as well as industry. Bharatiya Vidya Bhavan’s Sardar Patel College of Engineering, Unaided Wing was established in its new building under the name and style of Bharatiya
+                    Vidya Bhavan’s Sardar Patel Institute of Technology since 2005 and is affiliated to Mumbai University.
+                </ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row>
 </ion-content>

@@ -35,9 +35,6 @@
                             },
                             {
                                 "input": "src/global.scss"
-                            },
-                            {
-                                "input": "node_modules/bootstrap/css/bootstrap.min.css"
                             }
                         ],
                         "scripts": []
